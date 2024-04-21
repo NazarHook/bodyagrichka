@@ -5,7 +5,7 @@ import FullReload from 'vite-plugin-full-reload';
 
 export default defineConfig(({ command }) => {
   return {
-    assetsInclude: ['**/*.mp4'],
+    assetsInclude: ['**/*.MP4'],
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },

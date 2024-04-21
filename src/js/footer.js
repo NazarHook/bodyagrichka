@@ -5,7 +5,7 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import xIcon from '../images/icons/sprite.svg'
-const videoSrc = '../images/bodya/thanks.MP4';
+import videoThx from '../images/bodya/thanks.MP4'
 const inputCommit = document.querySelector('.js-inputCommit');
 const localStorageKey = 'feedback-form-state';
 const formFeedback = document.querySelector('.js-form');
@@ -89,7 +89,7 @@ function onSubmitForm(e) {
         <div class="footer-modal">
           <h2 class="footer-title-modal">Дякую файно! Богданчик скоро з вами звяжеться</h2>
           <video id="modalVideo" width="100" height="100">
-            <source src="${videoSrc}" type="video/mp4">
+            <source src="${videoThx}" type="video/mp4">
             Your browser does not support the video tag.
           </video>
           <button class="footer-button-modal js-closeModal">
