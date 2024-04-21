@@ -2,84 +2,646 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/bodyagrichka/assets/favicon-a0909458.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>full-stack-force</title>
+    <link
+      rel="stylesheet"  
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     
-    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/bodyagrichka/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/bodyagrichka/assets/vendor-afdc74e2.js">
+    <link rel="stylesheet" href="/bodyagrichka/assets/vendor-ffbe5324.css">
+    <link rel="stylesheet" href="/bodyagrichka/assets/index-693cc1ad.css">
   </head>
   <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+    <header id="header" class="header container">
+  <div class="header-nav">
+    <div class="logo-wrapper">
+      <a class="logo-link" href="index.html"
+        ><img
+          class="header-logo"
+          src="../images/bodya/434266223_445284284726496_6458633279379819203_n.jpg"
+          alt="icon profile"
+          width="80"
+          height="80"
+        />
+      </a>
+      <nav class="nav">
+        <p class="menu">Menu</p>
+        <ul class="menu-list open">
+          <li><a href="#about-me">About me</a></li>
+          <li><a href="#benefits">Benefits</a></li>
+          <li><a href="#projects-section">Projects</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
+        </ul>
+      </nav>
+      <button class="button-active" type="submit">Заказати Бодьку</button>
+    </div>
+    <button class="menu-btn" type="button">
+      <svg class="burger-icon" width="28" height="28">
+        <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-burger"></use>
+      </svg>
+    </button>
+  </div>
 </header>
+<div class="mobile-modal is-open">
+  <button class="close-btn" type="button">
+    <svg class="icon-close" width="28" height="28">
+      <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-close"></use>
+    </svg>
+  </button>
+  <ul class="modal-nav">
+    <li class="modal-nav-item">
+      <a href="#about-me" class="modal-nav-link">About me</a>
+    </li>
+    <li class="modal-nav-item">
+      <a href="#benefits" class="modal-nav-link">Benefits</a>
+    </li>
+    <li class="modal-nav-item">
+      <a href="#projects-section" class="modal-nav-link">Projects</a>
+    </li>
+    <li class="modal-nav-item">
+      <a href="#FAQ" class="modal-nav-link">FAQ</a>
+    </li>
+  </ul>
+  <button class="order-btn" type="submit">Order the project</button>
+</div>
+<a href="#header" class="scroll-up-link"
+  ><span class="scroll-up">
+    <svg width="28" height="28">
+      <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-arrow-up"></use>
+    </svg> </span
+></a>
 
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
-    </section>
-
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
-  <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
+    <main>
+      <section class="hero">
+  <div class="container hero-box">
+    <div class="t">
+      <h1>
+        <span class="t1">Здоров пацане</span><br>
+        <span class="t2">Я Бодя Гричка</span> 
+        <span class="t3">лютєйший криптоінвестор</span>
+      </h1>
+    </div>
+    <div class="l">
+      <ul class="hero-link-list">
+        <li>
           <a
-            class="link"
-            href="https://vitejs.dev/guide/"
+            class="social-link"
             target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
+            href="https://www.instagram.com/og_boodya/"
+            >IG</a
           >
         </li>
-        <li class="action">
+        <li>
           <a
-            class="link"
-            href="https://github.com/vitejs/vite"
+            class="social-link"
             target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
+            href="https://www.youtube.com/@dangervac7937"
+            >YT</a
+          >
+        </li>
+        <li>
+          <a class="contacts-list-link" href="mailto:bodyagrichka@gmail.com"
+            >bodyagrcihka@gmail.com</a
           >
         </li>
       </ul>
     </div>
+  </div>
+</section>
 
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
+      <section id="about-me">
+  <div class="container">
+    <div class="about-me-container">
+      <h2 class="visually-hidden">About me</h2>
+      <div class="first-section">
+        <p class="about-me-text">
+          Я працюю в криптовалюті, заробляю кучу бабла, то ся називат
+          <span class="green-text">Crypto</span>
+          <span class="gray-text">Business</span> в просто народі на то кажут пузирь
+        </p>
+        <picture>
+          <source
+            srcset="/bodyagrichka/assets/434357429_2012486482486141_5444584171960350094_n-987fa2c3.jpg 1x, /bodyagrichka/assets/434357429_2012486482486141_5444584171960350094_n-987fa2c3.jpg 2x"
+            media="(min-width: 1440px)"
+          />
+          <source
+            srcset="/bodyagrichka/assets/434357429_2012486482486141_5444584171960350094_n-987fa2c3.jpg 1x, /bodyagrichka/assets/434357429_2012486482486141_5444584171960350094_n-987fa2c3.jpg 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/bodyagrichka/assets/434357429_2012486482486141_5444584171960350094_n-987fa2c3.jpg 1x, /bodyagrichka/assets/434357429_2012486482486141_5444584171960350094_n-987fa2c3.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img
+            class="about-me-img"
+            src="../images//bodya/434357429_2012486482486141_5444584171960350094_n.jpg"
+            alt="Man with laptop"
+          />
+        </picture>
+      </div>
+
+      <div class="accordion-container" id="accordion-container">
+        <div class="ac" id="accordion1">
+          <div class="acc-title" id="acc-title1">
+            <h2 class="ac-header">Про мене</h2>
+            <button
+              type="button"
+              class="ac-trigger acc-btn"
+              id="acc-btn"
+            ></button>
+          </div>
+          <ul class="ac-panel">
+            <li class="ac-text" id="acc-text-first">
+             Я обичний пацан, люблю грати футбол, гуляти, никати на голих бабів, тай никати на гузиці.
+
+            </li>
+            <li class="ac-text" id="acc-text1">
+              В основному я люблю сидіти дома робити всякі графіки так як я криптоінвестор,
+              Тоже дуже
+              люблю поїсти, в основному я дуже 
+              полюбляю пудбивку лем бабчину тай пораз си зварю дакі пельмені, можу десь заїсти з хлопцями даку піцу з пабліка айбо не часто бо, цитую: "ВСІ ГРОШІ МАЮТЬ ІТИ В КРИПТУ"
+            </li>
+          </ul>
+        </div>
+
+        <div class="ac" id="accordion2">
+          <div class="acc-title" id="acc-title2">
+            <h2 class="ac-header">Масть по жизні</h2>
+            <button
+              type="button"
+              class="ac-trigger acc-btn"
+              id="acc-btn2"
+            ></button>
+          </div>
+          <ul class="ac-panel">
+            <li class="ac-text" id="acc-text2-1">Босс</li>
+            <li class="ac-text" id="acc-text2-2">Криптовалютчик</li>
+            <li class="ac-text" id="acc-text2-3">БодяБілдер</li>
+          </ul>
+        </div>
+
+        <div class="ac" id="accordion3">
+          <div class="acc-title" id="acc-title3">
+            <h2 class="ac-header">Начання</h2>
+            <button
+              type="button"
+              class="ac-trigger acc-btn"
+              id="acc-btn3"
+            ></button>
+          </div>
+          <ul class="ac-panel">
+            <li class="ac-text" id="acc-text3-1">
+              2013 - 2022 / Хустська загальноосвітня школа І-ІII ступенів №2 
+              School, Khust
+            </li>
+            <li class="ac-text" id="acc-text3-2">
+              2022 - 2024 / Хустський професійний ліцей з навчання по становленню Міліонерів (ФЗО)
+              School, New York
+            </li>
+            <li class="ac-text" id="acc-text3-3">
+              2024 -  / Секрет
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="swipe">
+        <div class="technologies swiper-container">
+          <ul class="technologies-list swiper-wrapper">
+            <li class="technologies-item swiper-slide">Бодя</li>
+            <li class="technologies-item swiper-slide">Клапі</li>
+            <li class="technologies-item swiper-slide">Босс</li>
+            <li class="technologies-item swiper-slide">Зайчик</li>
+            <li class="technologies-item swiper-slide">Мишка</li>
+            <li class="technologies-item swiper-slide">Кицька</li>
+            <li class="technologies-item swiper-slide">Іван</li>
+            <li class="technologies-item swiper-slide">Пацан</li>
+            <li class="technologies-item swiper-slide">Шістка</li>
+            <li class="technologies-item swiper-slide">Футболіст</li>
+            <li class="technologies-item swiper-slide">БодяБілдер</li>
+            <li class="technologies-item swiper-slide">Фігляр</li>
+          </ul>
+        </div>
+        <button class="button-next">
+          <svg class="arrow-right">
+            <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+
+  
+</section>
+
+      <section class="benefits section" id="benefits">
+  <div class="container benefits-container">
+    <h2 class="benefits-title">Переваги роботи зо мнов</h2>
+    <ul class="benefits-list list">
+      <li class="benefits-list-item">
+        <div class="benefits-list-icon-wrapper">
+          <svg
+            class="benefits-list-icon"
+            width="24"
+            height="24"
+            aria-label="user icon"
+          >
+            <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-user"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-list-title">Удобство</h3>
+        <p class="benefits-list-text">
+          Так як я дуже лінивий хуй, ви всьо будете робити самі
+        </p>
+      </li>
+      <li class="benefits-list-item">
+        <div class="benefits-list-icon-wrapper">
+          <svg
+            class="benefits-list-icon"
+            width="32"
+            height="32"
+            aria-label="chocolate icon"
+          >
+            <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-message"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-list-title">Комунікація</h3>
+        <p class="benefits-list-text">
+          Розуміючи вашу ситуацію я можу помочи вам свойим філософський совєтом в любий момент
+        </p>
+      </li>
+      <li class="benefits-list-item">
+        <div class="benefits-list-icon-wrapper">
+          <svg
+            class="benefits-list-icon"
+            width="32"
+            height="32"
+            aria-label="chocolate icon"
+          >
+            <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-brush"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-list-title">Креативність</h3>
+        <p class="benefits-list-text">
+         Дякуюючи тому шо я креативнй з народження, я годен удумати худь яку проблему би ви пак дале з неї випутувалися
+        </p>
+      </li>
+      <li class="benefits-list-item">
+        <div class="benefits-list-icon-wrapper">
+          <svg
+            class="benefits-list-icon"
+            width="32"
+            height="32"
+            aria-label="chocolate icon"
+          >
+            <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-hourglass"></use>
+          </svg>
+        </div>
+        <h3 class="benefits-list-title">Дедлайн</h3>
+        <p class="benefits-list-text">
+          Я розумію як время для вас важливе, того буду старатися робити всьо бистро (доки не доїм пудбивку)
+        </p>
+      </li>
+    </ul>
+  </div>
+  <div class="order">
+    <a class="order-the-project link" href="#order-section"
+      >Заказати Бодьку</a
+    >
+  </div>
+</section>
+
+      <section id="projects-section">
+  <div class="project-container container">
+    <h2 class="projects-section-title">Projects</h2>
+    <div class="projects-swiper projects-list-wrapper">
+      <ul class="swiper-wrapper projects-list">
+        <li class="swiper-slide projects-list-item">
+          <div class="project-description">
+            <ul class="project-tech-list">
+              <li class="project-tech-list-item">#дєньги</li>
+              <li class="project-tech-list-item">#криптоінвестор</li>
+              <li class="project-tech-list-item">#бодя</li>
+              <li class="project-tech-list-item">#босс</li>
+            </ul>
+            <h3 class="project-title">
+              Се я туйка тіпа дуже босс криптоінвестор
+            </h3>
+            <a
+              class="project-link"
+              target="_blank"
+              href="https://github.com/NazarHook/full-stack-force"
+              >See project</a
+            >
+          </div>
+          <div class="project-cover">
+            <picture>
+              <source
+                srcset="/bodyagrichka/assets/bodyagraphic-3b24ff83.jpeg 1x, /bodyagrichka/assets/bodyagraphic-3b24ff83.jpeg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/bodyagrichka/assets/bodyagraphic-3b24ff83.jpeg 1x, /bodyagrichka/assets/bodyagraphic-3b24ff83.jpeg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/bodyagrichka/assets/bodyagraphic-3b24ff83.jpeg 1x, /bodyagrichka/assets/bodyagraphic-3b24ff83.jpeg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="project-cover-img"
+                src="/bodyagrichka/assets/bodyagraphic-3b24ff83.jpeg"
+                alt="Programming Across Borders: Ideas, Technologies, Innovations"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="swiper-slide projects-list-item">
+          <div class="project-description">
+            <ul class="project-tech-list">
+              <li class="project-tech-list-item">#спортік</li>
+              <li class="project-tech-list-item">#зал</li>
+              <li class="project-tech-list-item">#фітоняшка</li>
+              <li class="project-tech-list-item">#БодяБілдер</li>
+            </ul>
+            <h3 class="project-title">
+              А се я в залі, дуже крутий і накачаний
+            </h3>
+            <a
+              class="project-link"
+              target="_blank"
+              href="https://github.com/NazarHook/full-stack-force"
+              >See project</a
+            >
+          </div>
+          <div class="project-cover">
+            <picture>
+              <source
+                srcset="/bodyagrichka/assets/434330271_1084350329488558_4852377404258031235_n-97709dca.jpg 1x, /bodyagrichka/assets/434330271_1084350329488558_4852377404258031235_n-97709dca.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/bodyagrichka/assets/434330271_1084350329488558_4852377404258031235_n-97709dca.jpg 1x, /bodyagrichka/assets/434330271_1084350329488558_4852377404258031235_n-97709dca.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/bodyagrichka/assets/434330271_1084350329488558_4852377404258031235_n-97709dca.jpg 1x, /bodyagrichka/assets/434330271_1084350329488558_4852377404258031235_n-97709dca.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="project-cover-img"
+                src=" ./images/bodya/434330271_1084350329488558_4852377404258031235_n.jpg"
+                alt="Programming Across Borders: Ideas, Technologies, Innovations"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="swiper-slide projects-list-item">
+          <div class="project-description">
+            <ul class="project-tech-list">
+              <li class="project-tech-list-item">#футбол</li>
+              <li class="project-tech-list-item">#сігма</li>
+              <li class="project-tech-list-item">#зал</li>
+              <li class="project-tech-list-item">#неймар</li>
+            </ul>
+            <h3 class="project-title">
+              Се я ухопив на бушці футболку клуба, так шо я туй дуже крутий футболіст
+            </h3>
+            <a
+              class="project-link"
+              target="_blank"
+              href="https://github.com/NazarHook/full-stack-force"
+              >See project</a
+            >
+          </div>
+          <div class="project-cover">
+            <picture>
+              <source
+                srcset="/bodyagrichka/assets/434510313_831217989043042_7773696290726969229_n-3cedcc1a.jpg 1x, /bodyagrichka/assets/434510313_831217989043042_7773696290726969229_n-3cedcc1a.jpg 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="/bodyagrichka/assets/434510313_831217989043042_7773696290726969229_n-3cedcc1a.jpg 1x, /bodyagrichka/assets/434510313_831217989043042_7773696290726969229_n-3cedcc1a.jpg 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="/bodyagrichka/assets/434510313_831217989043042_7773696290726969229_n-3cedcc1a.jpg 1x, /bodyagrichka/assets/434510313_831217989043042_7773696290726969229_n-3cedcc1a.jpg 2x"
+                media="(max-width: 767px)"
+              />
+              <img
+                class="project-cover-img"
+                src=" ./images/bodya/434510313_831217989043042_7773696290726969229_n.jpg"
+                alt="Programming Across Borders: Ideas, Technologies, Innovations"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="projects-pagination">
+      <button class="prev-project-btn project-pagination-btn">
+        <svg class="project-pagination-arrow">
+          <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-arrow-left"></use>
+        </svg>
+      </button>
+      <button class="next-project-btn project-pagination-btn">
+        <svg class="project-pagination-arrow">
+          <use href="/bodyagrichka/assets/sprite-e9ee8ff8.svg#icon-arrow-right"></use>
+        </svg>
+      </button>
     </div>
   </div>
 </section>
 
+      <section class="faq-container container" id="FAQ">
+  <p class="faq-page">Питаннячка</p>
 
+  <ul class="accordion-container">
+    <li class="ac" id="ac-1">
+      <div class="ac-question">
+        <h2 class="ac-header">
+         Шо в замен ви можете дати?
+        </h2>
+
+        <button
+          type="button"
+          class="ac-trigger more-btn"
+          id="ac-button-1"
+        ></button>
+
+      </div>
+      <div class="ac-panel">
+
+        <p class="faq-text">
+          Нич, ко ви такі би я вам шось давав?
+        </p>
+        
+      </div>
+    </li>
+    <li class="ac" id="ac-2">
+      <div class="ac-question">
+        <h2 class="ac-header">Куко грошей кошутє ваш проект?</h2>
+        <button
+          type="button"
+          class="ac-trigger more-btn"
+          id="ac-button-2"
+        ></button>
+      </div>
+      <div class="ac-panel">
+        <p class="faq-text">
+          Спустися долу та бдеш знати.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac-3">
+      <div class="ac-question">
+        <h2 class="ac-header">В якуй валюті ви принімаєте оплату?</h2>
+        <button
+          type="button"
+          class="ac-trigger more-btn"
+          id="ac-button-3"
+        ></button>
+      </div>
+      <div class="ac-panel">
+        <p class="faq-text">
+          Та в любуй, гроші не пахнуть.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac-4">
+      <div class="ac-question">
+        <h2 class="ac-header">Як мені з вами звязатись?</h2>
+        <button
+          type="button"
+          class="ac-trigger more-btn"
+          id="ac-button-4"
+        ></button>
+      </div>
+      <div class="ac-panel">
+        <p class="faq-text">
+          Свисни 3 раза, повернись 8 раз, поклади на стул пудбивку і я появлюсь.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac-5">
+      <div class="ac-question">
+        <h2 class="ac-header">Зашто я маю взяти ваш продукт?</h2>
+        <button
+          type="button"
+          class="ac-trigger more-btn"
+          id="ac-button-5"
+        ></button>
+      </div>
+      <div class="ac-panel">
+        <p class="faq-text">
+          А не важно.
+        </p>
+      </div>
+    </li>
+    <li class="ac" id="ac-6">
+      <div class="ac-question">
+        <h2 class="ac-header">
+          Який у вас досвід роботи в сфері ескорта?
+        </h2>
+        <button
+          type="button"
+          class="ac-trigger more-btn"
+          id="ac-button-6"
+        ></button>
+      </div>
+      <div class="ac-panel">
+        <p class="faq-text">
+          Повно...
+        </p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+      <section>
+  <h2 class="visually-hidden">Відгуки</h2>
+  <div class="container-reviews container">
+    <div class="gallery"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  
+</section>
+
+    </main>
+    <footer class="footer" id="order-section">
+  <div class="container-footer wrapper">
+    <div class="wrapper-footer">
+      <img
+        src="/bodyagrichka/assets/434252186_310511858503082_1606134705742517311_n-edabf66e.jpg"
+        alt="icon profile"
+        class="footer-img"
+      />
+      <h2 class="footer-pre-title">
+        Давайте <span class="footer-span">робити</span>
+      </h2>
+    </div>
+    <h2 class="footer-title">умісті</h2>
+    <div class="wrapper-form">
+      <form class="footer-form js-form">
+        <input
+          class="input-email js-inputEmail"
+          type="email"
+          name="email"
+          placeholder="clients@gmail.com"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          autocomplete="off"
+        />
+        <p class="status-text js-status-text"></p>
+        <input
+          class="input-commit js-inputCommit"
+          type="text"
+          name="message"
+          placeholder="comments"
+          autocomplete="off"
+        />
+        <button class="footer-button js-footerBtn" type="submit" disabled>
+          Полетіли
+        </button>
+      </form>
+    </div>
+    <div class="wrapper-fidback">
+      <ul class="footer-list">
+        <li class="footer-item">
+          <a class="footer-link" href="mailto:bodyagrichka@gmail.com"
+            >bodyagrichka@gmail.com</a
+          >
+        </li>
+        <li class="footer-item">
+          <a class="footer-link number-link" href="tel:+380987383135"
+            >+380 (98) 738 31 35</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    
+    
+    
+    
+    
+    
     
   </body>
 </html>
